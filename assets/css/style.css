@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     max-width: 2117px;
 }
@@ -37,7 +38,8 @@ nav{
 }
 nav a{
     color: var(--light-blue);
-    margin-right: 12px;
+    margin-right: 8px;
+    padding: 0 4px;
     border-bottom: 2px solid var(--light-blue);
     font-weight: bold;
     text-decoration: none;
@@ -60,26 +62,25 @@ nav a{
     padding: 5px;
     background-color: var(--light-blue);
     color: var(--dark-color);
+    font-weight: bold;
 }
 
 main {
     
-    margin: 0 4% 0 0;
+    margin: 0 4%;
 }
 
 main section {
     display: flex;
-    justify-content: start;
-    flex-direction: row;
     padding: 5px;
 }
 
 main section h2 {
-    width: 200px;
     color: var(--dark-blue);
     font-size: 48px;
+    font-weight: bolder;
     text-align: end;
-    margin: 5px 5px 5px 5% ;
+    margin: 5px;
     padding: 5px;
     border-right: 2px solid var(--dark-blue);
 }
@@ -91,9 +92,41 @@ main section div {
 }
 
 main section div a {
+    display: flex;
     color: var(--dark-blue);
     margin: 0 5%;
     border-bottom: 2px solid var(--dark-blue);
     font-weight: bold;
     text-decoration: none;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.work figure {
+    position: relative;
+    margin: 5px;
+}
+
+.work figure img {
+    border: 4px solid var(--light-blue);
+}
+
+.work figure figcaption {
+    position: absolute;
+    bottom: 5px;
+    margin-bottom: 15px;
+    padding: 5px 8px;
+    background-color: var(--light-blue);
+}
+
+.work figure figcaption > * {
+    margin: 0;
+}
+
+.contact {
+    justify-content: space-between;
 }
