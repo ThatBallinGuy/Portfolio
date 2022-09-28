@@ -12,6 +12,10 @@ You can navigate this webpage by clicking on the links at the top of the screen 
 
 ![Screenshot png](assets/images/Portfolio-Screenshot.png)
 
+## Link
+
+[Portfolio](https://thatballinguy.github.io/Portfolio/)
+
 ## License
 
 MIT License
