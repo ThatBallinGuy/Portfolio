@@ -10,7 +10,7 @@ body{
     justify-content: flex-start;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    max-width: 2117px;
+    
 }
 /*Header*/
 header{
@@ -28,6 +28,8 @@ header h1 {
     align-items: center;
     background-color: var(--light-blue);
     color: var(--dark-color);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 nav{
@@ -52,6 +54,10 @@ nav a{
     height: 300px;
     margin: 0;
     background-image: url(../images/Landing_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
 }
 
 .landingImg h2 {
@@ -59,31 +65,34 @@ nav a{
     align-items: center;
     position: relative;
     margin: 0 4% 2% 0;
-    padding: 5px;
+    padding: 10px;
     background-color: var(--light-blue);
     color: var(--dark-color);
     font-weight: bold;
+    border-radius: 5px;
 }
 /*main focus*/
 main section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 5px;
 }
 
-main section aside {
+aside {
+    display: flex;
+    justify-content: end;
     width: 15%;
     margin: 20px 30px;
+    border-right: 2px solid var(--dark-blue);
 }
 
-main section aside h2 {
+aside h2 {
     color: var(--dark-blue);
     font-size: 40px;
     font-weight: bolder;
     text-align: right;
-    border-right: 2px solid var(--dark-blue);
 }
+
 
 main section div {
     display: flex;
@@ -128,9 +137,12 @@ figure:first-child {
 .work figure figcaption {
     position: absolute;
     bottom: 5px;
+    left: -1px;
     margin-bottom: 15px;
     padding: 5px 8px;
     background-color: var(--light-blue);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .work figure figcaption > * {
@@ -138,7 +150,8 @@ figure:first-child {
 }
 /*Contact section*/
 .contact {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contact a {
