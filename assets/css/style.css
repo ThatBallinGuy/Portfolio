@@ -162,3 +162,46 @@ figure:first-child {
     font-weight: bold;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1035px) {
+    main section{
+        flex-direction: column;
+    }
+    aside {
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+        border-bottom: 2px solid var(--dark-blue);
+        border-right: none;
+    }
+    main section div{
+        width: 95%;
+    }
+   
+    .contact{
+        width: 80%;
+        margin:auto;
+        justify-content: center;
+    }
+    .contact a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    header{
+        flex-direction: column;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 10px 0;
+        display: block;
+        border-radius: 0px;
+    }
+    nav {
+        margin: 15px auto 15px auto;
+    }
+}
